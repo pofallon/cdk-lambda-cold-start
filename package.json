@@ -1,0 +1,37 @@
+{
+  "name": "cdk-lambda-cold-start",
+  "version": "0.1.0",
+  "bin": {
+    "cdk-lambda-cold-start": "bin/cdk-lambda-cold-start.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.111.0",
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "aws-cdk": "1.111.0",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigatewayv2": "^1.111.0",
+    "@aws-cdk/aws-apigatewayv2-integrations": "^1.111.0",
+    "@aws-cdk/aws-cloudwatch": "^1.111.0",
+    "@aws-cdk/aws-lambda": "^1.111.0",
+    "@aws-cdk/aws-lambda-nodejs": "^1.111.0",
+    "@aws-cdk/aws-logs": "^1.111.0",
+    "@aws-cdk/aws-stepfunctions": "^1.111.0",
+    "@aws-cdk/aws-stepfunctions-tasks": "^1.111.0",
+    "@aws-cdk/core": "1.111.0",
+    "aws-sdk": "^2.939.0",
+    "got": "^11.8.2",
+    "source-map-support": "^0.5.16"
+  }
+}
