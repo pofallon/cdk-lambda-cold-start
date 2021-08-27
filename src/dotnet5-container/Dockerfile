@@ -16,6 +16,9 @@ RUN dotnet publish "DotNet5Lambda.csproj" \
             -p:PublishReadyToRun=true  
 
 FROM base AS final
+RUN curl -O https://lambda-insights-extension.s3-ap-northeast-1.amazonaws.com/amazon_linux/lambda-insights-extension.rpm && \
+    rpm -U lambda-insights-extension.rpm && \
+    rm -f lambda-insights-extension.rpm
 WORKDIR /var/task
 COPY --from=publish /app/publish .
 
